@@ -1,7 +1,7 @@
 // src/hooks/useAuth.tsx
 import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 interface AuthContextType {
   isAuthenticated: boolean;
