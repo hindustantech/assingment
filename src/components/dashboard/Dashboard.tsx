@@ -54,7 +54,7 @@ const Dashboard: React.FC = () => {
     try {
       // Assuming you add a backend endpoint /api/seed to run the seed script
       // In backend, create a route that executes the seed logic
-      await axios.post('/api/seed', {}, {
+      await axios.post(`${Base}/api/auth/seed`, {}, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       alert('Database seeded successfully');
